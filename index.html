@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmark</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+
+  <div class="container p-5 text-center">
+
+    <div>
+      <h2 class="text-center mb-5">Bookmarker</h2>
+    </div>
+    <h3 class="mb-4">
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h3>
+    <form class="pt-4" action="">
+     
+      <div class="mb-3 text-start">
+        <label for="siteName" class="mb-2 fw-bold">
+          <i class="fa-solid fa-book-bookmark pe-2"></i>
+          Site Name
+        </label>
+        <input placeholder="Bookmark Name" class="form-control" type="text" id="siteName">
+        <p id="alertName" class="text-danger mt-2 d-none ">Enter valid Bookmark name</p>
+      </div>
+      <div class="mb-3 text-start">
+        <label for="siteUrl" class="mb-2 fw-bold">
+          <i class="fa-solid fa-link pe-2"></i>
+          Site URL</label>
+        <input placeholder="Website URL" class="form-control" type="text" id="siteUrl">
+        <p id="alertUrl" class="text-danger mt-2 d-none ">Enter valid Bookmark name</p>
+      </div>
+      <button onclick="addBookmark()" type="button" class="btn btn-custom px-5 mb-4">Submit</button>
+    </form>
+
+
+    <table class="table mt-5 text-center table-responsive">
+      <tr class="fs-6">
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+
+
+      <tbody id="tbody">
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
